@@ -9,20 +9,22 @@
     "react-scripts": "5.0.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.0",
     "@types/faker": "5.5.3",
     "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
+    "http-server": "^14.1.1",
+    "react-scripts": "1.0.0",
     "typescript": "4.5.4"
   },
   "name": "9ncqis",
-  "description": null,
+  "description": "Investigate perf issues with iframes",
   "version": "0.0.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve:iframes": "yarn http-server ./src/iframes -p 1337"
   },
   "browserslist": {
     "production": [
