@@ -1,17 +1,39 @@
 {
-  "name": "iframe-perf-app",
-  "version": "0.1.0",
-  "private": true,
+  "main": "index.tsx",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "0.9.5"
+    "chart.js": "^3.6.0",
+    "faker": "5.5.3",
+    "react": "18.0.0",
+    "react-chartjs-2": "^4.0.0",
+    "react-dom": "18.0.0",
+    "react-scripts": "5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "@types/faker": "5.5.3",
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "typescript": "4.5.4"
+  },
+  "name": "9ncqis",
+  "description": null,
+  "version": "0.0.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
