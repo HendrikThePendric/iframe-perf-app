@@ -12,6 +12,7 @@
     "@types/faker": "5.5.3",
     "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
+    "concurrently": "^7.3.0",
     "http-server": "^14.1.1",
     "react-scripts": "1.0.0",
     "typescript": "4.5.4"
@@ -24,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "serve:iframes": "yarn http-server ./src/iframes -p 1337"
+    "serve:iframes": "yarn http-server src/iframes -p 1337",
+    "serve:shadow-dom": "yarn http-server src/shadow-dom -p 1338",
+    "serve": "concurrently \"yarn serve:iframes\" \"yarn serve:shadow-dom\""
   },
   "browserslist": {
     "production": [
